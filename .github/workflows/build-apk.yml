@@ -39,7 +39,7 @@ jobs:
         EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
       
     - name: Build APK
-      run: eas build --platform android --profile preview --non-interactive
+      run: eas build --platform android --profile preview --non-interactive --clear-cache
       env:
         EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         
